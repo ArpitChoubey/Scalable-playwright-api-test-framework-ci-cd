@@ -1,238 +1,541 @@
-🚀 Scalable-playwright api test framework CI/CD
+# 🚀 Scalable Playwright API Test Framework with CI/CD
 
-🔥 A powerful, scalable, and production-ready End-to-End Automation Framework built using Playwright + TypeScript covering UI Testing, API Testing, and Visual Testing.
+<p align="center">
 
+<img src="https://img.shields.io/badge/Playwright-Latest-45ba63?style=for-the-badge&logo=playwright&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/API%20Testing-REST-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/UI%20Testing-End--to--End-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Visual%20Testing-Snapshot-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Jenkins-CI%2FCD-red?style=for-the-badge&logo=jenkins"/>
+<img src="https://img.shields.io/badge/Allure-Reporting-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HTML-Reporter-blueviolet?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Parallel-Execution-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Open%20Source-GitHub-black?style=for-the-badge&logo=github"/>
 
-📌 Project Overview
+</p>
 
-This repository demonstrates a real-world automation framework designed for modern applications with:
+---
 
-✅ UI Automation Testing
-✅ API Automation Testing
-✅ Visual Testing (Snapshot Comparison)
-✅ Data-Driven Testing
+# 🌟 Enterprise Playwright Automation Framework
+
+A **production-ready Playwright + TypeScript Automation Framework** designed to automate modern web applications using **UI Testing, API Testing, Visual Regression Testing**, and **Jenkins CI/CD**.
+
+The framework follows enterprise automation engineering practices including:
+
+- Page Object Model (POM)
+- API Automation
+- Visual Regression Testing
+- Parallel Execution
+- Reporting
+- CI/CD Integration
+- Data-Driven Testing
+- Cross Browser Automation
+
+---
+
+# 🎯 Live Website Under Test
+
+## 🌐 Sparkle Cart
+
+https://sparklecartonline.com/
+
+---
+
+# 🚀 GitHub Repository
+
+https://github.com/ArpitChoubey/Scalable-playwright-api-test-framework-ci-cd
+
+---
+
+# ⭐ Why This Repository Stands Out
+
+Unlike beginner Playwright repositories, this project demonstrates an enterprise automation framework that combines multiple testing strategies within a single scalable solution.
+
+### ✔ UI Automation
+
+Modern Playwright UI automation using best practices.
+
+### ✔ API Automation
+
+REST API CRUD validation using Playwright Request Context.
+
+### ✔ Visual Regression Testing
+
+Snapshot comparison to detect unexpected UI changes.
+
+### ✔ CI/CD Pipeline
+
+Integrated with Jenkins for continuous testing.
+
+### ✔ Reporting
+
+Allure + HTML Reports with screenshots and tracing.
+
+---
+
+# 🚀 Key Features
+
+✅ End-to-End UI Automation
+
+✅ API Automation
+
+✅ Visual Regression Testing
+
+✅ Page Object Model
+
+✅ Data-Driven Testing (JSON)
+
 ✅ Parallel Execution
-✅ Reporting & Debugging
 
-💡 Built using industry best practices followed by top product-based companies
+✅ Cross Browser Testing
 
+✅ Jenkins CI/CD
 
-🧠 Why This Project Stands Out 
+✅ Allure Reporting
 
-✔ Covers UI + API + Visual Testing (rare combination)
-✔ Real-world test scenarios (not beginner scripts)
-✔ Strong Page Object Model (POM) implementation
-✔ Clean, scalable & reusable framework
-✔ Demonstrates SDET-level architecture
-✔ Fully CI/CD Ready with Jenkins Integration
+✅ HTML Reporting
 
+✅ Screenshots
 
-⚙️ CI/CD Integration with Jenkins 🚀
+✅ Playwright Tracing
 
-This framework is integrated with Jenkins to enable continuous testing and seamless automation pipeline execution.
+✅ Debug Mode
 
-🔹 Key Capabilities:
-Automated test execution via Jenkins pipeline
-CI/CD workflow setup for build & test stages
-Parallel test execution triggered via Jenkins
-Allure & HTML reports generation post execution
-Supports scheduled & on-demand runs
-🖼️ Jenkins Execution Snapshots
-
-To demonstrate real-world CI/CD implementation, Jenkins setup and execution screenshots are included:
-
-📌 Jenkins Pipeline / Execution Status
-File: Jenkins Status.png
-Shows build execution status and pipeline results
-📌 Jenkins Job Configuration
-File: Jenkins.png
-Displays job setup and configuration details
-📌 Jenkins Workspace Setup
-File: Jenkins Workspace.png
-Demonstrates project workspace and build environment
-
-📸 These screenshots validate hands-on CI/CD experience using Jenkins, showcasing how automation is executed in a real pipeline.
-
-📌 Tech Stack
-🎭 Playwright
-🟦 TypeScript
-🟢 Node.js
-📦 npm
-📊 Allure Reporting
-📑 HTML Reporter
-🔄 Parallel Execution
-📸 Screenshots, Tracing & Debugging
-
-🚀 Key Features
-Scalable Page Object Model (POM) design
-API testing using Playwright request context
-Visual testing using snapshot comparison
-Data-driven testing support
-Cross-browser execution
-Parallel test execution
-Rich reporting (Allure + HTML)
-CI/CD pipeline integration (Jenkins)
-
+✅ Modular Architecture
 
 ---
 
-## 🏗️ Complete Project Structure
+# 🏗 Framework Architecture
 
+```
+Scalable-playwright-api-test-framework-ci-cd
 
-📦 Playwright-TypeScript-Automation-API-Testing
 │
-├── 📂 pages/ → Page Object Model (POM)
-│ ├── CartPage.ts
-│ ├── HomePage.ts
-│ └── LoginPage.ts
+├── Screenshots
 │
-├── 📂 tests/
+├── TestData
 │
-│ ├── 📂 apitest/ → API Testing
-│ │ ├── CreateBookingJson.spec.ts
-│ │ ├── get_api.spec.ts
-│ │ ├── postApi_Request_01_createBooking.spec.ts
-│ │ └── put-api.spec.ts
+├── pages
 │
-│ ├── 📂 vstest/ → Visual Testing (Snapshot)
-│ │ ├── visualtesting.spec.ts
-│ │ ├── visual2.spec.ts
-│ │ ├── visualtesting.spec.ts-snapshots/
-│ │ └── visual2.spec.ts-snapshots/
+├── tests
+│   ├── API Tests
+│   ├── UI Tests
+│   └── Visual Tests
 │
-│ ├── Annotation.spec.ts
-│ ├── AssertionsTypes.spec.ts
-│ ├── Authenticatedpopup.spec.ts
-│ ├── Autosuggestdropdown.spec.ts
-│ ├── Autowaitingtest.spec.ts
-│ ├── BookingDataPicker.spec.ts
-│ ├── Bootstraphiddendropdown.spec.ts
-│ ├── Browsercontext.spec.ts
-│ ├── BuiltinLocators.spec.ts
-│ ├── ComparingMethods.spec.ts
-│ ├── CssLocators.spec.ts
-│ ├── DataDrivenTestingjson.spec.ts
-│ ├── Dialog.spec.ts
-│ ├── DropdownOrder.spec.ts
-│ ├── DropdownSorted.spec.ts
-│ ├── DynamicElementUsingXpath.spec.ts
-│ ├── DynamicElementsusingPWLocators.spec.ts
-│ ├── Dynamichandle.spec.ts
-│ ├── EcommerceBuiltinLocators.spec.ts
-│ ├── FlakyTest.spec.ts
-│ ├── Frame.spec.ts
-│ ├── GroupingTest.spec.ts
-│ ├── HandleDynamicElementUsingCSS.spec.ts
-│ ├── Handlepopups.spec.ts
-│ ├── HardvsSoftAssertion.spec.ts
-│ ├── HooksTest.spec.ts
-│ ├── JQuerydatepicker.spec.ts
-│ ├── MultiSelectDropdown.spec.ts
-│ ├── Myfirsttest.spec.ts
-│ ├── MySecondtest.spec.ts
-│ ├── Pagination.spec.ts
-│ ├── ParallelTest.spec.ts
-│ ├── Parallelism.spec.ts
-│ ├── PwActions.spec.ts
-│ ├── Reporter.spec.ts
-│ ├── Screenshots.spec.ts
-│ ├── StaticWebTable.spec.ts
-│ ├── Tagging.spec.ts
-│ ├── Timeout.spec.ts
-│ ├── Tracing.spec.ts
-│ ├── XPathAxes.spec.ts
-│ ├── XPathLocators.spec.ts
-│ ├── accessibility.spec.ts
-│ ├── dropdowncontainsduplicates.spec.ts
-│ ├── handletabs.spec.ts
-│ ├── hooks2.spec.ts
-│ ├── pomtest.spec.ts
-│ ├── promptDialog.spec.ts
-│ ├── singleselectdropdown.spec.ts
-│ └── sparklecart.spec.ts
+├── allure-results
 │
-├── 📂 Screenshots/ → Captured screenshots
-├── 📂 TestData/ → Test data (JSON)
-├── 📂 allure-report/ → Allure HTML report
-├── 📂 allure-results/ → Raw results
-├── 📂 html-report/ → Playwright report
+├── allure-report
 │
-├── 📜 playwright.config.ts → Config file
-├── 📜 package.json
-├── 📜 package-lock.json
-├── 📜 results.json
-├── 📜 results.xml
-├── 📜 trace.zip
-└── 📜 README.md
-
+├── html-report
+│
+├── playwright.config.ts
+│
+├── package.json
+│
+└── README.md
+```
 
 ---
 
-## 🧪 Key Features Covered
+# 🧩 Framework Design
 
-✔ Built-in Locators  
-✔ CSS & XPath Locators  
-✔ Dynamic Elements Handling  
-✔ Frames & Tabs Handling  
-✔ Authentication Popups  
-✔ Alerts & Dialog Handling  
-✔ Dropdown Handling (Single / Multi / Bootstrap / Autosuggest)  
-✔ Data-Driven Testing (JSON)  
-✔ Hard vs Soft Assertions  
-✔ Hooks (Before/After)  
-✔ Parallel Execution  
-✔ Tracing & Screenshots  
-✔ Test Grouping & Tagging  
-✔ Handling Flaky Tests  
-✔ Timeout Handling  
-✔ Web Tables  
-✔ Pagination  
-✔ API Testing (CRUD operations)  
-✔ Visual Regression Testing  
+## Page Object Model
+
+- Centralized locators
+- Reusable page methods
+- Separation of concerns
+- Easy maintenance
 
 ---
 
-## ⚙️ Installation
+## API Layer
+
+Uses Playwright Request Context for
+
+- GET
+- POST
+- PUT
+- DELETE
+- Response Validation
+- Authentication
+
+---
+
+## UI Layer
+
+Automates complete user journeys
+
+- Login
+- Product Search
+- Cart
+- Checkout
+- Validation
+
+---
+
+## Visual Testing Layer
+
+Snapshot comparison detects
+
+- UI regressions
+
+- Unexpected layout changes
+
+- CSS issues
+
+---
+
+## Test Data Layer
+
+External JSON files provide
+
+- Test Data
+
+- Dynamic Inputs
+
+- Reusable Datasets
+
+---
+
+# 🧪 UI Automation Coverage
+
+✔ Built-in Locators
+
+✔ CSS Locators
+
+✔ XPath Locators
+
+✔ Dynamic Elements
+
+✔ Frames
+
+✔ Browser Tabs
+
+✔ Authentication Popups
+
+✔ Alerts
+
+✔ Dialogs
+
+✔ JavaScript Dialogs
+
+✔ Dropdowns
+
+✔ Auto Suggest
+
+✔ Bootstrap Dropdown
+
+✔ Multi Select
+
+✔ Pagination
+
+✔ Tables
+
+✔ Hooks
+
+✔ Assertions
+
+✔ Hard & Soft Assertions
+
+✔ Screenshots
+
+✔ Trace Viewer
+
+✔ Parallel Execution
+
+✔ Grouping
+
+✔ Tagging
+
+✔ Accessibility
+
+✔ Timeout Handling
+
+✔ Flaky Test Handling
+
+---
+
+# 🌐 API Testing Coverage
+
+REST API CRUD Operations
+
+✔ GET
+
+✔ POST
+
+✔ PUT
+
+✔ DELETE
+
+✔ Request Validation
+
+✔ Response Validation
+
+✔ JSON Assertions
+
+✔ Status Code Validation
+
+✔ Authentication
+
+---
+
+# 📸 Visual Regression Testing
+
+Snapshot testing implemented using Playwright.
+
+Supports
+
+- Image Comparison
+
+- Layout Validation
+
+- UI Regression Detection
+
+---
+
+# ⚙ Jenkins CI/CD Integration
+
+The framework is integrated with Jenkins to support continuous automation execution.
+
+## CI/CD Features
+
+✔ Automated Builds
+
+✔ Scheduled Execution
+
+✔ Parallel Test Execution
+
+✔ Allure Report Generation
+
+✔ HTML Report Generation
+
+✔ Build Status Tracking
+
+✔ Workspace Management
+
+---
+
+# 📸 Jenkins Demonstration
+
+Repository includes Jenkins execution screenshots demonstrating real-world CI/CD implementation.
+
+Included
+
+- Jenkins Pipeline
+
+- Build Status
+
+- Workspace Configuration
+
+- Project Setup
+
+---
+
+# 📊 Reporting
+
+## HTML Report
 
 ```bash
-git clone https://github.com/your-username/Playwright-TypeScript-Automation.git
-cd Playwright-TypeScript-Automation
-npm install
-npx playwright install
-▶️ Running Tests
-npx playwright test
-npx playwright test --headed
-npx playwright test --debug
-📊 Reporting
-HTML Report
 npx playwright show-report
-Allure Report
-allure serve allure-results
+```
 
-🔄 CI/CD Ready
-GitHub Actions compatible
-Jenkins / Azure DevOps ready
-Supports automated pipelines
+---
 
-🎯 Ideal For
-QA Engineers
-Automation Testers
-SDET Engineers
-QA Leads / Test Leads
-Recruiters evaluating automation skills
+## Allure Report
 
-👨‍💻 Author
+Generate
 
-Arpit Choubey
-SDET | QA | Automation Engineer
+```bash
+allure generate allure-results --clean
+```
 
-🔗 LinkedIn: https://www.linkedin.com/in/arpitchoubey/
+Open
 
-✍️ Medium: https://medium.com/@ArpitChoubey9
+```bash
+allure open
+```
 
-⭐ Support
+---
 
-If this repository helped you, please ⭐ star it to support and motivate further contributions in it.
+# 🛠 Technology Stack
+
+| Technology | Purpose |
+|------------|----------|
+| 🎭 Playwright | Browser Automation |
+| 🟦 TypeScript | Programming Language |
+| 🌐 REST APIs | API Testing |
+| 📊 Allure | Reporting |
+| 📄 HTML Reporter | Reports |
+| 🔴 Jenkins | CI/CD |
+| 📦 npm | Package Manager |
+| 🟢 Node.js | Runtime |
+
+---
+
+# 🚀 Installation
+
+Clone repository
+
+```bash
+git clone https://github.com/ArpitChoubey/Scalable-playwright-api-test-framework-ci-cd.git
+```
+
+Move into project
+
+```bash
+cd Scalable-playwright-api-test-framework-ci-cd
+```
+
+Install packages
+
+```bash
+npm install
+```
+
+Install browsers
+
+```bash
+npx playwright install
+```
+
+---
+
+# ▶ Execute Tests
+
+Run all tests
+
+```bash
+npx playwright test
+```
+
+Headed mode
+
+```bash
+npx playwright test --headed
+```
+
+Debug mode
+
+```bash
+npx playwright test --debug
+```
+
+Run API tests
+
+```bash
+npx playwright test tests/apitest
+```
+
+Run Visual tests
+
+```bash
+npx playwright test tests/vstest
+```
+
+---
+
+# 💼 Skills Demonstrated
+
+This repository showcases practical experience with
+
+- Playwright
+- TypeScript
+- UI Automation
+- API Automation
+- Visual Testing
+- Jenkins
+- CI/CD
+- REST API Testing
+- JSON Validation
+- Parallel Execution
+- Test Architecture
+- Page Object Model
+- Reporting
+- Automation Framework Design
+- Enterprise QA Practices
+
+---
+
+# 🚀 Future Enhancements
+
+- Docker Execution
+
+- GitHub Actions
+
+- Azure DevOps Pipeline
+
+- BrowserStack Integration
+
+- Retry Analyzer
+
+- Slack Notifications
+
+- Performance Testing
+
+- Playwright Fixtures
+
+- Environment Profiles
+
+- Database Validation
+
+---
+
+# 🎯 Ideal For
+
+✔ QA Automation Engineers
+
+✔ Software Development Engineers in Test (SDET)
+
+✔ Automation Architects
+
+✔ QA Leads
+
+✔ Test Managers
+
+✔ Engineering Managers
+
+✔ Recruiters evaluating automation portfolios
+
+✔ Playwright Interview Preparation
+
+---
+
+# 👨‍💻 Author
+
+## Arpit Choubey
+
+**SDET | QA Automation Engineer | Playwright | Selenium | API Testing | CI/CD**
+
+Passionate about building scalable automation frameworks, modern QA solutions, and enterprise-grade testing architectures.
+
+### 🌐 Connect With Me
+
+**GitHub**
+
+https://github.com/ArpitChoubey
+
+**LinkedIn**
+
+https://www.linkedin.com/in/arpitchoubey/
+
+**Medium**
+
+https://medium.com/@ArpitChoubey9
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, consider giving it a **Star ⭐**.
+
+It motivates me to continue building production-ready automation frameworks and sharing practical QA engineering resources with the automation community.
+
+---
+
+## 💬 Engineering Philosophy
+
+> **"Modern automation isn't just about executing tests—it's about engineering scalable quality solutions that accelerate software delivery with confidence."**
 
 
 
