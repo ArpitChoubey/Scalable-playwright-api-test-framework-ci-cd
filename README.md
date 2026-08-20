@@ -12,6 +12,7 @@
 <img src="https://img.shields.io/badge/HTML-Reporter-blueviolet?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Parallel-Execution-success?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Open%20Source-GitHub-black?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/Azure%20DevOps-CI%2FCD-0078D4?style=for-the-badge&logo=azuredevops&logoColor=white"/>
 
 </p>
 
@@ -134,6 +135,8 @@ Scalable-playwright-api-test-framework-ci-cd
 ├── package.json
 │
 └── README.md
+│
+├── azure-pipelines.yml
 ```
 
 ---
@@ -370,6 +373,7 @@ allure open
 | 🔴 Jenkins | CI/CD |
 | 📦 npm | Package Manager |
 | 🟢 Node.js | Runtime |
+| 🔵 Azure DevOps             | CI/CD & Pipeline Automation |
 
 ---
 
